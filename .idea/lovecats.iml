@@ -11,5 +11,6 @@
     <orderEntry type="library" name="modernizr" level="application" />
     <orderEntry type="library" name="meyer-reset" level="application" />
     <orderEntry type="library" name="prefixfree" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
