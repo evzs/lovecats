@@ -18,8 +18,8 @@
 </head>
 
 <body>
-
-<nav class="nav-bar">
+<div id="top" style="width: 0; height: 0"></div>
+<nav id="nav-bar">
     <a href="index.html"><img src="assets/images/logo.png" alt="logo"
                               class="icon"></a>
     <ul class="nav-links">
@@ -27,10 +27,40 @@
             of Fame</a></li>
         <li class="nav-item"><a class="button shrink" href="timeline.html">Timeline</a></li>
     </ul>
-
-
+        <div class="dropdown">
+            <div class="button shrink">x</div>
+            <!--   -->
+            <div class="dropdown-one">
+                <div id="one" class="item-dd" href="#">
+                    1
+                    <!--   -->
+                    <div class="dropdown-two">
+                        <div class="item-dd">1-1</div>
+                        <div class="item-dd">1-2</div>
+                    </div>
+                </div>
+                <div class="item-dd">2</div>
+                <div class="item-dd">3</div>
+            </div>
+        </div>
 </nav>
 
+<nav id="v-nav-bar">
+    <ul class="v-nav-links">
+        <li class="v-nav-item grow"> <a href="#top"><img
+                src="assets/images/up.png" alt="up" width="64"
+                height="64"></a></li>
+        <li class="v-nav-item grow">            <a href="gallery.html"><img
+                src="assets/images/gallery.png" alt="gallery" width="64"
+                height="64"></a></li>
+        <li class="v-nav-item grow"> <a href="timeline.html"><img
+                src="assets/images/timeline.png" alt="timeline" width="64"
+                height="64"></a></li>
+        <li class="v-nav-item grow"> <a href="#bottom"><img
+                src="assets/images/down.png" alt="down" width="64"
+                height="64"></a></li>
+    </ul>
+</nav>
 
 
 
@@ -107,7 +137,7 @@
     </div>
     <div class="ft-flex">
         <section class="flex-content sc-styling">
-            <p>©2023 || The Lovecats</p>
+            <p id="bottom">©2023 || The Lovecats</p>
         </section>
         <section class="flex-content sc-styling">
             <a href="https://www.linkedin.com/in/eva-chibane-75039b257/"><img
@@ -121,9 +151,11 @@
                     height="64"></a>
         </section>
     </div>
+
 </footer>
 
 <script type="text/javascript" src="carousel.js"></script>
+<script type="text/javascript" src="nav.js"></script>
 </body>
 
 </html>
