@@ -32,6 +32,8 @@ input:focus {
     cursor: url(../images/activecursor.png) 2.2 2.2, pointer;
 }
 
+/* navbar */
+
 nav {
     overflow: hidden;
     background: rgba(219, 124, 255, .5);
@@ -112,6 +114,10 @@ nav img {
         font-size: 20px;
     }
 }
+
+/* dropdown */
+
+
 
 .shrink {
     transition: all .2s ease-in-out;
@@ -316,6 +322,26 @@ fieldset {
 }
 
 
+@media screen  and (max-width: 920px){
+
+    input {
+        font-size: 12px;
+        font-weight: 700;
+        height: 10px;
+    }
+    input::placeholder {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .subbutton {
+        height: 28px;
+        font-size: 12px;
+        font-weight: 900;
+
+    }
+
+}
+
 /* ------- */
 /* GALLERY */
 /* ------- */
@@ -482,7 +508,7 @@ fieldset {
     transition: transform .15s, box-shadow .15s;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:920px) {
     .next {
         right: 2em;
     }
@@ -495,34 +521,27 @@ fieldset {
     .prev {
         top: 633px;
     }
+
+    .container {
+        perspective: 450px;
+    }
+
+    .item {
+        width: 190px;
+        height: 190px;
+    }
+
+    .item p {
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .item h1 {
+        font-size: 14px;
+    }
 }
 
-/* --------- */
-/* SCROLLBAR */
-/* --------- */
 
-/* Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #9d4fff #c38eff;
-}
-
-/* Others */
-*::-webkit-scrollbar {
-    width: 20px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #c38eff;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2) inset;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: #c38eff;
-    border-radius: 20px;
-    border: solid 3px #9d4fff;
-    box-shadow: 4px 4px #7e40cc;
-}
 
 /* --------- */
 /* TIMELINE */
@@ -623,6 +642,16 @@ a.redirection {
 }
 
 
+@media screen and (max-width:920px) {
+    .timeline {
+        width: 80%;
+    }
+
+    .tl-box {
+        padding: 0px;
+    }
+}
+
 
 @-webkit-keyframes text-shadow-pop-br {
     0% {
@@ -676,4 +705,31 @@ a.redirection {
         -webkit-transform: translateX(-8px) translateY(-8px);
         transform: translateX(-8px) translateY(-8px);
     }
+}
+
+/* --------- */
+/* SCROLLBAR */
+/* --------- */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #9d4fff #c38eff;
+}
+
+/* Others */
+*::-webkit-scrollbar {
+    width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #c38eff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #c38eff;
+    border-radius: 20px;
+    border: solid 3px #9d4fff;
+    box-shadow: 4px 4px #7e40cc;
 }
